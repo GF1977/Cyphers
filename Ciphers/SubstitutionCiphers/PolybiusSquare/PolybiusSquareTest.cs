@@ -31,7 +31,5 @@ namespace Ciphers.SubstitutionCiphers.PolybiusSquare
             string encodedText = _polybiusSquare.Encode(plain_message);
             _polybiusSquare.Decode(encodedText).ShouldBe(plain_message.ToUpper());
         }
-
     }
-
 }

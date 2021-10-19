@@ -60,7 +60,7 @@ namespace Ciphers.SubstitutionCiphers.PolybiusSquare
             {
                 //int encodedLetter = 0;
                 int.TryParse(encodedText.Substring(i, 2), out int encodedLetter);
-                // if the symbol is not a Letter, we shift the index back and add space
+                // if the symbol is not a Letter, we shift the index back and add space.
                 if (encodedLetter < 11 || encodedLetter > 55)
                 {
                     decoded_text += ' ';
